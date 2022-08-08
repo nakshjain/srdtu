@@ -1,0 +1,267 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+}
+.topnav img {
+  float: left;
+  margin-top: 0.4557291666666667vw ;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0.9114583333333334vw 1.0416666666666667vw;
+  text-decoration: none;
+  font-size: 1.1067708333333333vw;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: rgb(1, 101, 104);
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.topnav input[type="text"] {
+  float: right;
+  padding: 0.5208333333333334vw;
+  border: none;
+  margin-top: 0.5208333333333334vw;
+  margin-right: 0.6510416666666666vw;
+}
+
+.sr-logo{
+  width:5vw;
+  height: auto;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: rgb(1, 101, 104);
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.9114583333333334vw;
+  padding: 0.5208333333333334vw;
+  width: 8.463541666666666vw;
+  transition: all 0.4s;
+  cursor: pointer;
+  margin: 0.390625vw;
+  float: right;
+  margin-top: 0.390625vw;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -1.3020833333333333vw;
+  transition: 0.4s;
+}
+
+.button:hover span {
+  padding-right: 1.6276041666666667vw;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.search{
+  border-radius: 4px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.9114583333333334vw;
+  padding: 0.5208333333333334vw;
+  width: 8.463541666666666vw;
+  margin: 0.390625vw;
+  float: right;
+  margin-top: 0.390625vw;
+}
+
+#mainbody {
+  background-color: rgb(1, 101, 104);
+}
+
+.main_img {
+  width: 65%;
+  height: auto;
+  float: right;
+  margin-top: 1px;
+}
+.main_h1 {
+  font-family: "Emblema One";
+  position: absolute;
+  width: 36vw;
+  height: 4.4vw;
+  left: 3.9vw;
+  top: 12.9vw;
+  font-size: 3vw;
+}
+.main_p {
+  position: absolute;
+  width: 36vw;
+  height: 4.4vw;
+  left: 3.9vw;
+  top: 19.5vw;
+  font-family: "Freehand";
+  font-size: 1.95vw;
+  text-align: center;
+}
+
+/*ABOUT-US*/
+.aboutus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 44.2vw;
+  top: 2vw 0;
+  background-color: #383838;
+}
+.aboutus_p {
+  width: 72%;
+  flex-direction: column;
+  font-family: "Actor";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8vw;
+  line-height: 1.62vw;
+  text-align: center;
+
+  color: #ffffff;
+  position: relative;
+  top: 10%;
+}
+
+.aboutus-heading {
+  font-size: 3.3vw;
+  margin: 0 ;
+  color: white;
+}
+
+.slide {
+  position: relative;
+  width: 62%;
+  height: 60%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  display: flex;
+  top: 2.5vw;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+  border: 5px solid rgb(247, 246, 246);
+}
+.slide-1 {
+  display: none;
+}
+.slide-2 {
+  display: none;
+}
+.slide-3 {
+  display: none;
+}
+#next {
+  font-size: 3.255vw;
+  color: #ffffff;
+  opacity: 0.5;
+  cursor: pointer;
+}
+#prev {
+  font-size: 3.255vw;
+  color: #ffffff;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/*Associated*/
+.associations {
+  padding: 2vw 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #323232;
+  box-sizing: border-box;
+}
+
+.spon-grid {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 1.2vw;
+  grid-template-rows: repeat(3, 10vh);
+  grid-template-columns: repeat(12, 5vw);
+}
+
+.grid-elem {
+  box-sizing: border-box;
+}
+
+.grid-elem a img {
+  width: 4vw;
+  height: auto;
+}
+
+.grid-elem a img:hover {
+  width: 5vw;
+  height: auto;
+}
+
+.association-heading {
+  font-size: 3.255vw;
+  margin: 0 0 2vw 0;
+  color: white;
+}
+
+.association-span {
+  margin-top: 1.5vw;
+}
+
+.association-span-text {
+  padding: 1% 0 0 0;
+  font-size: 1.5vw;
+  color: white;
+}
+
+.association-span-button {
+  height: 3vw;
+  width: 8vw;
+  font-size: 1.2vw;
+  font-weight: 600;
+  margin-left: 0.5vw;
+  padding: 0;
+  border-radius: 1vw;
+  border: 0;
+}
