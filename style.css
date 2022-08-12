@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   padding: 0;
   margin: 0;
@@ -12,10 +13,12 @@ body {
   background-color: #333;
   width: 100%;
 }
+
 .topnav img {
   float: left;
-  margin-top: 0.4557291666666667vw ;
+  margin-top: 0.4557291666666667vw;
 }
+
 .topnav a {
   float: left;
   display: block;
@@ -48,8 +51,8 @@ body {
   margin-right: 0.6510416666666666vw;
 }
 
-.sr-logo{
-  width:5vw;
+.sr-logo {
+  width: 5vw;
   height: auto;
 }
 
@@ -94,7 +97,7 @@ body {
   right: 0;
 }
 
-.search{
+.search {
   border-radius: 4px;
   color: #ffffff;
   text-align: center;
@@ -116,6 +119,7 @@ body {
   float: right;
   margin-top: 1px;
 }
+
 .main_h1 {
   font-family: "Emblema One";
   position: absolute;
@@ -125,6 +129,7 @@ body {
   top: 12.9vw;
   font-size: 3vw;
 }
+
 .main_p {
   position: absolute;
   width: 36vw;
@@ -147,6 +152,7 @@ body {
   top: 2vw 0;
   background-color: #383838;
 }
+
 .aboutus_p {
   width: 72%;
   flex-direction: column;
@@ -164,7 +170,7 @@ body {
 
 .aboutus-heading {
   font-size: 3.3vw;
-  margin: 0 ;
+  margin: 0;
   color: white;
 }
 
@@ -178,26 +184,32 @@ body {
   display: flex;
   top: 2.5vw;
 }
+
 .slide img {
   width: 100%;
   height: 100%;
   border: 5px solid rgb(247, 246, 246);
 }
+
 .slide-1 {
   display: none;
 }
+
 .slide-2 {
   display: none;
 }
+
 .slide-3 {
   display: none;
 }
+
 #next {
   font-size: 3.255vw;
   color: #ffffff;
   opacity: 0.5;
   cursor: pointer;
 }
+
 #prev {
   font-size: 3.255vw;
   color: #ffffff;
@@ -264,4 +276,71 @@ body {
   padding: 0;
   border-radius: 1vw;
   border: 0;
+}
+
+h1.events {
+  text-align: center;
+  font-size: 3.3vw;
+  margin-top: 2vw;
+  font-weight: 500;
+}
+
+div.events-bigBox {
+  display: flex;
+  margin-right: auto;
+  padding: 10%;
+  padding-top: 0%;
+
+}
+
+div.events-box {
+  width: 20%;
+  margin: auto;
+  /* border: 1px s */
+  border-radius: 5%;
+  box-shadow: 1px 1px 2px 1px grey;
+  height: 300px;
+  background-color: rgb(160, 156, 156, 0.6);
+  backdrop-filter: grayscale(0.5) opacity(0.8);
+
+}
+
+/* add media query for phone */
+@media (max-width: 768px) {
+  div.events-bigBox {
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.events-box {
+    margin-top: 8%;
+    width: 70%;
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width:1024px) {
+  div.events-bigBox {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr)minmax(0, 1fr);
+    row-gap: 5%;
+    column-gap: 5%;
+    margin: 0%;
+  }
+
+  div.events-box {
+
+    height: 350px;
+    width: 250px;
+  }
+
+
+}
+
+div.events-text {
+  text-align: center;
+  margin: auto;
+  margin-top: -5vw;
+  font-size: 1.6vw;
+  font-weight: 600;
 }
